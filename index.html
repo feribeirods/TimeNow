@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeNow</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link rel="shortcut icon" href="Assets/Logo.svg" type="image/x-icon">
+
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <img class="img-logo" src="assets/Logo.svg" alt="">
+
+            <img class="hamburger" src="Assets/Hamburger Menu.svg" alt="">
+
+            <div class="menu-hide">
+                <ul>
+                    <li class="menu-linha"><a href=""><i class="fas fa-user-secret"></i> Sobre</a></li>
+                    <li class="menu-linha"><a href="preco.html"><i class="fas fa-file-code"></i> Preço</a></li>
+                </ul>       
+            </div>
+
+            <ul class="ul-menu">
+                <li class="li-menu"><a class="link-menu" href="">Serviços</a></li>
+                <li class="li-menu"><a class="link-menu" href="preco.html">Preços</a></li>
+            </ul>
+        </nav>
+
+        <div class="comeceAgendar">
+            <button>Começe a Agendar</button>
+        </div>
+    </header>
+
+    <section class="c1">
+
+        <div class="container-texto1">
+
+            <h1>Publique quando <br> sua audiência estiver<br> mais ativa.</h1>
+
+            <p class="texto-c1">Com TimeNow, você agenda a publicação automática<br> 
+                dos seus posts em seu Twitter, LinkedIn e Instagram<br> 
+                quando seus seguidores estiverem mais ativos
+            </p>
+
+            <button>Começe a Agendar</button>
+            <a href="" class="link-menu"><strong>Veja como</strong></a>
+
+            <div>
+                
+                <img class="img-shield" src="Assets/Shield.svg" alt=""> 
+                <p class="shield-text">O TimeNow garante a segurança dos seus dados</p>
+                <a href="" class="link-menu link-shield">Saiba Mais</a>
+                
+            </div>
+
+        </div>
+
+        <div class="img-mockup">
+            <img src="Assets/Mockup.png">
+        </div>
+    </section>
+
+    <section class="c2">
+
+        <div class="container-texto2">
+            <h1>O TimeNow é utilizado pelos melhores influenciadores.</h1>
+            <img class="img-mini" src="Assets/UA1.png" alt="">
+            <img class="img-mini" src="Assets/UA2.png" alt="">
+            <img class="img-mini" src="Assets/UA3.png" alt="">
+            <img class="img-mini" src="Assets/UA4.png" alt="">
+            <img class="img-mini" src="Assets/UA5.png" alt="">
+            <img class="img-mini" src="Assets/UA6.png" alt="">
+            <img class="img-mini" src="Assets/UA7.png" alt="">
+            <img class="img-mini" src="Assets/UA8.png" alt="">
+        </div>
+
+        <div class="container-texto3">
+            <p>Os melhores influenciadores no Facebook, twitter e Instagram estão usando o TimeNow para agendar seus posts para o momento em que seus seguidores estão mais ativos.</p>
+
+            <p>Eles tem uma resposta 23% maior do que quem não utiliza.</p>
+        </div>
+    </section>
+
+    <section class="c3">
+
+        <div class="container-texto4">
+            <div class="titulo">Painel de Controle Unificado.</div>
+            <h1 class="titulo-painel">Painel de controle costomizado para todas as plataformas.</h1>
+            <p>Usa Twitter e Instagram mas não usa LinkdedIn? Sem problemas, você pode customizar o seu painel de controle como preferir. Você pode ainda agendar o mesmo post individualmente para<br> 
+                as suas plataformas.</p>
+            <button>Começe a Agendar</button>
+        </div>
+
+        <div class="container-texto5">
+            <div class="titulo">Estatísticas otimizadas</div>
+            <h1 class="titulo-painel">Dados em tempo real que te dizem tudo!</h1>
+            <p>Receba relatórios detalhados sobre o que está e o que não está funcionando.<br> 
+                Engajamento, interações, visualizações e muito mais disponível para você no seu<br> 
+                painel de controle.</p>
+            <a href="" class="link-menu">Veja uma demonstração</a>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div>
+            <img class="img-logo" src="assets/Logo.svg" alt="">
+        </div>
+
+        <div class="container-footer">
+
+            <div class="lista-footer">
+                <ul>
+                    <li class="mb-1">Produtos</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Preços</a></li>
+                    <li><a href="">Serviços</a></li>
+                </ul>
+            </div>
+
+            <div class="lista-footer">
+                <ul>
+                    <li class="mb-1">Ajuda</li>
+                    <li><a href="">Live Chat</a></li>
+                    <li><a href="">Email</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="lista-footer">
+                <ul>
+                    <li class="mb-1">TimeNow</li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Clientes</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="container-input">
+                    <input type="email" placeholder="Digite seu e-mail">
+                    <button class="input-button">Começe a Agendar</button>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+<script>
+    const menuBtn = document.querySelector('.hamburger')
+    const menuSide = document.querySelector('.menu-hide')
+    let menuOpen = false
+
+
+    menuBtn.addEventListener('click', () => {
+
+        if (!menuOpen) {
+            menuSide.classList.add('menu-show')
+            menuOpen = true
+
+            } else {
+            menuSide.classList.remove('menu-show')
+            menuOpen = false
+                    
+        }
+    })
+</script>
+</body>
+
+</html>
